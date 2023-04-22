@@ -1,0 +1,76 @@
+:root {
+  --default-black: #353535;
+  --default-light: #EBE9E5;
+  --default-light-transparent: #ffffff53;
+  --accent: #92e723;
+  --accent-transparent: #a2e72393;
+  --accent-transparent2: #a2e7235b;
+  --accent-dark: #73c507;
+  --secondary-accent: #f1c23f;
+
+  background-color: var(--default-light);
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  width: 320px;
+  height: 320px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, label {
+  margin: 0;
+  color: var(--default-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Cabin', sans-serif;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--default-black);
+}
+
+h1, h2, h3 {
+  font-family: 'Cabin', sans-serif;
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  } 100% {
+    opacity: 100%;
+  }
+}
+
+.fade-out {
+  animation: fade-out 0.5s ease-in;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  } 100% {
+    opacity: 0%;
+  }
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 50%;
+}
